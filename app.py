@@ -10,8 +10,11 @@ def main():
     
   elif choice == "Login":
     st.subheader("Login Selection")
-    username = st.sidbar.text_input("User Name")
-    password = st.sidbar.text_input("Password",type='password')
+    username = st.sidebar.text_input("User Name")
+    password = st.sidebar.text_input("Password",type='password')
+    if st.button("Login"):
+      st.success("Logged In as {}".format(username))
+    
 
   elif choice == "Signup":
     st.subheader("Create New Account")
