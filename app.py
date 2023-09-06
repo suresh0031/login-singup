@@ -12,7 +12,7 @@ def main():
     st.subheader("Login Selection")
     username = st.sidebar.text_input("User Name")
     password = st.sidebar.text_input("Password",type='password')
-    if st.button("Login"):
+    if st.sidebar.button("Login"):
       st.success("Logged In as {}".format(username))
     
 
