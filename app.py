@@ -7,8 +7,11 @@ def main():
 
   if choice == "Home":
     st.subheader("Home")
+    
   elif choice == "Login":
     st.subheader("Login Selection")
+    username = st.sidbar.text_input("User Name")
+    password = st.sidbar.text_input("Password",type='password')
 
   elif choice == "Signup":
     st.subheader("Create New Account")
